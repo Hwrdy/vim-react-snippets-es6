@@ -26,11 +26,13 @@ snippet sdp
 	static defaultProps = {
 		${1}
 	},
-snippet gis
-	getInitialState: function() {
-		return {
+snippet sct
+	static contextTypes = {
+		${1}: PropTypes.${2:string},
+	};
+snippet its
+	this.state = {
 			${1}: ${2}
-		};
 	},
 snippet reactclass
 	class ${1:ClassName} extends Components {
@@ -44,7 +46,7 @@ snippet reactclass
 	}
 snippet spt
 	static propTypes = {
-		${1}: PropTypes.${2:string}
+		${1}: PropTypes.${2:string},
 	};
 snippet ren
 	render() {
