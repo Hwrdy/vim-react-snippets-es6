@@ -1,39 +1,39 @@
 snippet cdm
 	componentDidMount() {
 		${1}
-	},
+	}
 snippet cdup
 	componentDidUpdate(prevProps, prevState) {
 		${1}
-	},
+	}
 snippet cwm
 	componentWillMount() {
 		${1}
-	},
+	}
 snippet cwr
 	componentWillReceiveProps(nextProps) {
 		${1}
-	},
-snippet cwun
+	}
+snippet cwum
 	componentWillUnmount() {
 		${1}
-	},
+	}
 snippet cwu
 	componentWillUpdate(nextProps, nextState) {
 		${1}
-	},
+	}
 snippet sdp
 	static defaultProps = {
 		${1}
-	},
+	};
 snippet sct
 	static contextTypes = {
 		${1}: PropTypes.${2:string},
 	};
-snippet its
+snippet ts
 	this.state = {
 			${1}: ${2}
-	},
+	};
 snippet reactclass
 	class ${1:ClassName} extends Components {
 
@@ -44,6 +44,60 @@ snippet reactclass
 		}
 
 	}
+snippet es6pcom
+	import React, { PureComponent } from 'react';
+
+	class ${1:ClassName} extends PureComponents {
+
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	}
+
+	export default ${1:ClassName};
+snippet es6com
+	import React, { Component, PropTypes } from 'react';
+
+	class ${1:ClassName} extends PureComponents {
+		static propTypes = {};
+
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	}
+
+	export default ${1:ClassName};
+snippet es6con
+	import React, { Component, PropTypes } from 'react';
+	import { connect } from 'react-redux';
+
+	const mapStateToProps = (initialState, initialOwnProps) => {
+		const selector = createStructuredSelector({i
+			props: sel,
+		});
+
+		return (state) => selector(state);
+	}
+
+	const mapDispatchToProps = (dispatch) => ({
+		func: () => dispatch(func()),
+	});
+
+	class ${1:ClassName} extends PureComponents {
+		static propTypes = {};
+
+		render() {
+			return (
+				${0:<div />}
+			);
+		}
+	}
+
+	export default connect(mapStateToProps, mapDispatchToProps)(${1:ClassName});
 snippet spt
 	static propTypes = {
 		${1}: PropTypes.${2:string},
@@ -61,7 +115,7 @@ snippet tst
 snippet scu
 	shouldComponentUpdate(nextProps, nextState) {
 		${1}
-	},
+	}
 snippet pp
 	this.props.${1}
 snippet st
