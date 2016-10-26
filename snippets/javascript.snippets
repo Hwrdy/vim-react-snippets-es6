@@ -74,9 +74,10 @@ snippet es6com
 snippet es6con
 	import React, { Component, PropTypes } from 'react';
 	import { connect } from 'react-redux';
+	import { createStructuredSelector } from 'reselect';
 
 	const mapStateToProps = (initialState, initialOwnProps) => {
-		const selector = createStructuredSelector({i
+		const selector = createStructuredSelector({
 			props: sel,
 		});
 
@@ -120,3 +121,7 @@ snippet pp
 	this.props.${1}
 snippet st
 	this.state.${1}
+snippet cstp
+	const {${1}} = this.props;
+snippet csts
+	const {${1}} = this.state;
