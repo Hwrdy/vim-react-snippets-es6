@@ -99,6 +99,21 @@ snippet es6con
 	}
 
 	export default connect(mapStateToProps, mapDispatchToProps)(${1:ClassName});
+snippet es6slf
+	import React, { PropTypes } from 'react';
+
+	const ${1:ClassName} = ({${2:props1}, ${3:props2}}) => {
+		return (
+			${0:<div />}
+		);
+	}
+
+	${1:ClassName}.propTypes = {
+		${2:props1}: PropTypes.string,
+		${3:props2}: propTypes.string,
+	};
+
+	export default ${1:ClassName};
 snippet spt
 	static propTypes = {
 		${1}: PropTypes.${2:string},
