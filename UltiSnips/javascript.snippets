@@ -1,39 +1,50 @@
+endsnippet
 snippet cdm
 	componentDidMount() {
 		${1}
 	}
+endsnippet
 snippet cdup
 	componentDidUpdate(prevProps, prevState) {
 		${1}
 	}
+endsnippet
 snippet cwm
+
 	componentWillMount() {
 		${1}
 	}
+endsnippet
 snippet cwr
 	componentWillReceiveProps(nextProps) {
 		${1}
 	}
+endsnippet
 snippet cwum
 	componentWillUnmount() {
 		${1}
 	}
+endsnippet
 snippet cwu
 	componentWillUpdate(nextProps, nextState) {
 		${1}
 	}
+endsnippet
 snippet sdp
 	static defaultProps = {
 		${1}
 	};
+endsnippet
 snippet sct
 	static contextTypes = {
 		${1}: PropTypes.${2:string},
 	};
+endsnippet
 snippet ts
 	this.state = {
 			${1}: ${2}
 	};
+endsnippet
 snippet reactclass
 	class ${1:ClassName} extends Components {
 
@@ -44,6 +55,7 @@ snippet reactclass
 		}
 
 	}
+endsnippet
 snippet es6pcom
 	import React, { PureComponent } from 'react';
 
@@ -57,6 +69,7 @@ snippet es6pcom
 	}
 
 	export default ${1:ClassName};
+endsnippet
 snippet es6com
 	import React, { Component, PropTypes } from 'react';
 
@@ -71,6 +84,7 @@ snippet es6com
 	}
 
 	export default ${1:ClassName};
+endsnippet
 snippet es6con
 	import React, { Component, PropTypes } from 'react';
 	import { connect } from 'react-redux';
@@ -99,6 +113,7 @@ snippet es6con
 	}
 
 	export default connect(mapStateToProps, mapDispatchToProps)(${1:ClassName});
+endsnippet
 snippet es6slf
 	import React, { PropTypes } from 'react';
 
@@ -114,32 +129,41 @@ snippet es6slf
 	};
 
 	export default ${1:ClassName};
+endsnippet
 snippet spt
 	static propTypes = {
 		${1}: PropTypes.${2:string},
 	};
+endsnippet
 snippet ren
 	render() {
 		return (
 			${1:<div />}
 		);
 	}
+endsnippet
 snippet tst
 	this.setState({
 		${1}: ${2}
 	});
+endsnippet
 snippet scu
 	shouldComponentUpdate(nextProps, nextState) {
 		${1}
 	}
+endsnippet
 snippet pp
 	this.props.${1}
+endsnippet
 snippet st
 	this.state.${1}
+endsnippet
 snippet cstp
 	const {${1}} = this.props;
+endsnippet
 snippet csts
 	const {${1}} = this.state;
 	console.log(${0});
+endsnippet
 snippet csv
 	console.log(${VISUAL}$0)
