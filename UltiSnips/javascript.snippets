@@ -1,169 +1,169 @@
 snippet cdm
-	componentDidMount() {
-		${1}
-	}
+componentDidMount() {
+	${1}
+}
 endsnippet
 snippet cdup
-	componentDidUpdate(prevProps, prevState) {
-		${1}
-	}
+componentDidUpdate(prevProps, prevState) {
+	${1}
+}
 endsnippet
 snippet cwm
 
-	componentWillMount() {
-		${1}
-	}
+componentWillMount() {
+	${1}
+}
 endsnippet
 snippet cwr
-	componentWillReceiveProps(nextProps) {
-		${1}
-	}
+componentWillReceiveProps(nextProps) {
+	${1}
+}
 endsnippet
 snippet cwum
-	componentWillUnmount() {
-		${1}
-	}
+componentWillUnmount() {
+	${1}
+}
 endsnippet
 snippet cwu
-	componentWillUpdate(nextProps, nextState) {
-		${1}
-	}
+componentWillUpdate(nextProps, nextState) {
+	${1}
+}
 endsnippet
 snippet sdp
-	static defaultProps = {
-		${1}
-	};
+static defaultProps = {
+	${1}
+};
 endsnippet
 snippet sct
-	static contextTypes = {
-		${1}: PropTypes.${2:string},
-	};
+static contextTypes = {
+	${1}: PropTypes.${2:string},
+};
 endsnippet
 snippet ts
-	this.state = {
-			${1}: ${2}
-	};
+this.state = {
+		${1}: ${2}
+};
 endsnippet
 snippet reactclass
-	class ${1:ClassName} extends Components {
+class ${1:ClassName} extends Components {
 
-		render: function() {
-			return (
-				${0:<div />}
-			);
-		}
-
-	}
-endsnippet
-snippet es6pcom
-	import React, { PureComponent } from 'react';
-
-	class ${1:ClassName} extends PureComponent {
-
-		render() {
-			return (
-				${0:<div />}
-			);
-		}
-	}
-
-	export default ${1:ClassName};
-endsnippet
-snippet es6com
-	import React, { Component, PropTypes } from 'react';
-
-	class ${1:ClassName} extends Component {
-		static propTypes = {};
-
-		render() {
-			return (
-				${0:<div />}
-			);
-		}
-	}
-
-	export default ${1:ClassName};
-endsnippet
-snippet es6con
-	import React, { Component, PropTypes } from 'react';
-	import { connect } from 'react-redux';
-	import { createStructuredSelector } from 'reselect';
-
-	const mapStateToProps = (initialState, initialOwnProps) => {
-		const selector = createStructuredSelector({
-			props: sel,
-		});
-
-		return (state) => selector(state);
-	}
-
-	const mapDispatchToProps = (dispatch) => ({
-		func: () => dispatch(func()),
-	});
-
-	class ${1:ClassName} extends Component {
-		static propTypes = {};
-
-		render() {
-			return (
-				${0:<div />}
-			);
-		}
-	}
-
-	export default connect(mapStateToProps, mapDispatchToProps)(${1:ClassName});
-endsnippet
-snippet es6slf
-	import React, { PropTypes } from 'react';
-
-	const ${1:ClassName} = ({${2:props1}, ${3:props2}}) => {
+	render: function() {
 		return (
 			${0:<div />}
 		);
 	}
 
-	${1:ClassName}.propTypes = {
-		${2:props1}: PropTypes.string,
-		${3:props2}: propTypes.string,
-	};
+}
+endsnippet
+snippet es6pcom
+import React, { PureComponent } from 'react';
 
-	export default ${1:ClassName};
-endsnippet
-snippet spt
-	static propTypes = {
-		${1}: PropTypes.${2:string},
-	};
-endsnippet
-snippet ren
+class ${1:ClassName} extends PureComponent {
+
 	render() {
 		return (
-			${1:<div />}
+			${0:<div />}
 		);
 	}
+}
+
+export default ${1:ClassName};
+endsnippet
+snippet es6com
+import React, { Component, PropTypes } from 'react';
+
+class ${1:ClassName} extends Component {
+	static propTypes = {};
+
+	render() {
+		return (
+			${0:<div />}
+		);
+	}
+}
+
+export default ${1:ClassName};
+endsnippet
+snippet es6con
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+const mapStateToProps = (initialState, initialOwnProps) => {
+	const selector = createStructuredSelector({
+		props: sel,
+	});
+
+	return (state) => selector(state);
+}
+
+const mapDispatchToProps = (dispatch) => ({
+	func: () => dispatch(func()),
+});
+
+class ${1:ClassName} extends Component {
+	static propTypes = {};
+
+	render() {
+		return (
+			${0:<div />}
+		);
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(${1:ClassName});
+endsnippet
+snippet es6slf
+import React, { PropTypes } from 'react';
+
+const ${1:ClassName} = ({${2:props1}, ${3:props2}}) => {
+	return (
+		${0:<div />}
+	);
+}
+
+${1:ClassName}.propTypes = {
+	${2:props1}: PropTypes.string,
+	${3:props2}: propTypes.string,
+};
+
+export default ${1:ClassName};
+endsnippet
+snippet spt
+static propTypes = {
+	${1}: PropTypes.${2:string},
+};
+endsnippet
+snippet ren
+render() {
+	return (
+		${1:<div />}
+	);
+}
 endsnippet
 snippet tst
-	this.setState({
-		${1}: ${2}
-	});
+this.setState({
+	${1}: ${2}
+});
 endsnippet
 snippet scu
-	shouldComponentUpdate(nextProps, nextState) {
-		${1}
-	}
+shouldComponentUpdate(nextProps, nextState) {
+	${1}
+}
 endsnippet
 snippet pp
-	this.props.${1}
+this.props.${1}
 endsnippet
 snippet st
-	this.state.${1}
+this.state.${1}
 endsnippet
 snippet cstp
-	const {${1}} = this.props;
+const {${1}} = this.props;
 endsnippet
 snippet csts
-	const {${1}} = this.state;
-	console.log(${0});
+const {${1}} = this.state;
+console.log(${0});
 endsnippet
 snippet csv
-	console.log(${VISUAL}$0)
+console.log(${VISUAL}$0)
 endsnippet
